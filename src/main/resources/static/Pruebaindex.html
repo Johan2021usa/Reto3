@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PARTY COLOMBIA SALONES</title>
+</head>
+<div class="margen">
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/misFunciones.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+	<h1 class="header">Salones</h1>
+    <p></p>
+    <div class="posicion">
+    <div class="posicion">
+        <div class="encoger">
+            <input type="hidden" id="id" placeholder="id">
+            <input class= "tamañoceldas" type="text" id="name" placeholder="name">  
+            <input class= "tamañoceldas" type="text" id="owner" placeholder="owner">
+            <input class= "tamañoceldas" type="number" id="capacity" placeholder="capacity">                        
+            <input class= "tamañoceldas" type="text" id="description" placeholder="description"> 
+            <input class="field button" type ="button" onclick="Cargar()" title="Consultar" value="Consultar">
+            <input class="field button" type ="button" onclick="ingresarDatos()" title="Registrar Salon" value="Registrar Salon">
+            <input class="field button" type ="button" id="pruebaba" onclick="actualizar()" title="actualizar" value="actualizar">
+            <input class="field button" type ="button" onclick="limpiarCampos(),habilitar()" title="Limpiar" value="Limpiar">       
+        </div>
+    </div>
+        <div class="posicion2" id="TablaP"></div>  
+    </div>
+    <div class="menu">
+        <h1 class="header2">Menu</h1>
+        <a href="clientes.html"> <h2 class="color">Clientes</h2></a>
+        <a href="message.html">  <h2 class="color">Mensajes</h2></a>
+        <a href="Reservation.html"><h2 class="header2">Reservas</h2></a>
+        <a href="Admin.html">  <h2 class="color">Administradores</h2></a>
+        <a href="Category.html">  <h2 class="color">Categorias</h2></a>
+        <a href="Score.html">  <h2 class="color">Puntajes</h2></a>
+        <a href="inicio.html">   <h2 class="color">Inicio</h2></a>
+    </div>   
+</div>
+</body>
+</html>

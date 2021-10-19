@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PARTY COLOMBIA PUNTAJES</title>
+</head>
+<div class="margen">
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/misFunciones.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+	<h1 class="header">Puntajes</h1>
+    <p></p>
+    <div class="posicion">
+    <div class="posicion">
+        <div class="encoger">
+            <input type="hidden" id="idScore" placeholder="idScore">  
+            <input class= "tamañoceldas" type="number" id="calificacion" placeholder="calificacion">  
+            <input class= "tamañoceldas" type="text" id="mensaje" placeholder="mensaje">    
+            
+            
+            <input class="field button" type ="button" onclick="CargarScore()" title="Consultar" value="Consultar">
+            <input class="field button" type ="button" onclick="ingresarDatosScore()" title="Registrar Admin" value="Registrar Puntaje">
+            <input class="field button" type ="button" onclick="limpiarCamposScore(),habilitarScore()" title="Limpiar" value="Limpiar">       
+        </div>
+    </div>
+        <div class="posicion2" id="TablaP"></div>  
+    </div>
+    <div class="menu">
+        <h1 class="header2">Menu</h1>
+        <a href="clientes.html"> <h2 class="color">Clientes</h2></a>
+        <a href="message.html">  <h2 class="color">Mensajes</h2></a>
+        <a href="Pruebaindex.html">  <h2 class="color">Salones</h2></a>
+        <a href="Category.html">  <h2 class="color">Categorias</h2></a>
+        <a href="Reservation.html">  <h2 class="color">Reservas</h2></a>
+        <a href="Admin.html">  <h2 class="color">Administradores</h2></a>
+        <a href="inicio.html">   <h2 class="color">Inicio</h2></a>
+    </div>   
+</div>
+</body>
+</html>
