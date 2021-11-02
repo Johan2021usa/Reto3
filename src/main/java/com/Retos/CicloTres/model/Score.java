@@ -44,9 +44,6 @@ public class Score implements Serializable{
         this.calificacion = calificacion;
     }
 
-    
-    
-    
     public Reservation getReservation() {
         return reservation;
     }
@@ -54,9 +51,7 @@ public class Score implements Serializable{
     public void setReservation(Reservation reservation) {
         this.reservation = reservation;
     }
-    
-    
-    
+
     public Integer getIdScore() {
         return idScore;
     }

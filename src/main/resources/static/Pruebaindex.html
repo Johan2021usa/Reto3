@@ -3,41 +3,49 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PARTY COLOMBIA SALONES</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Reto 5: Salones</title>
 </head>
-<div class="margen">
 <body>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/misFunciones.js"></script>
-    <link rel="stylesheet" href="css/estilos.css">
-	<h1 class="header">Salones</h1>
-    <p></p>
-    <div class="posicion">
-    <div class="posicion">
-        <div class="encoger">
-            <input type="hidden" id="id" placeholder="id">
-            <input class= "tamañoceldas" type="text" id="name" placeholder="name">  
-            <input class= "tamañoceldas" type="text" id="owner" placeholder="owner">
-            <input class= "tamañoceldas" type="number" id="capacity" placeholder="capacity">                        
-            <input class= "tamañoceldas" type="text" id="description" placeholder="description"> 
-            <input class="field button" type ="button" onclick="Cargar()" title="Consultar" value="Consultar">
-            <input class="field button" type ="button" onclick="ingresarDatos()" title="Registrar Salon" value="Registrar Salon">
-            <input class="field button" type ="button" id="pruebaba" onclick="actualizar()" title="actualizar" value="actualizar">
-            <input class="field button" type ="button" onclick="limpiarCampos(),habilitar()" title="Limpiar" value="Limpiar">       
+    <div class="header">
+	    <h1>SALONES</h1>
+    </div>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <h1 class="centrarObj">Menu</h1>
+                <li><a href="clientes.html"><button class="butMenu">Clientes</button></a></li>
+                <li><a href="message.html"><button class="butMenu">Mensajes</button></a></li>
+                <li><a href="Reservation.html"><button class="butMenu">Reservas</button></a></li>
+                <li><a href="Admin.html"><button class="butMenu">Administrador</button></a></li>
+                <li><a href="Category.html"><button class="butMenu">Categoria</button></a></li>
+                <li><a href="Score.html"><button class="butMenu">Puntajes</button></a></li>
+                <li><a href="inicio.html"><button class="butMenu">Inicio</button></a></li>
+            </ul>
+        </div>
+        <div class="col-9 col-s-9">
+            <div class="fondReg">
+                <p class="centrarObj tituloCelda"> DATOS DE REGISTRO DE SALONES</p>
+                <div class="hijo_reg">
+                    <p id="TablaP"></p>
+                </div>
+            </div>
+            <div class="centrarObj fondInp">
+                <input type="hidden" id="id" placeholder="id">
+                <input class= "textoHolder" type="text" id="name" placeholder="name">
+                <input class= "textoHolder" type="text" id="owner" placeholder="owner">
+                <input class= "textoHolder" type="number" id="capacity" placeholder="capacity">
+                <input class= "textoHolder" type="text" id="description" placeholder="description">
+            </div>
+            <div class="fondBut">
+                <input class="butIni" type ="button" onclick="Cargar()" title="Consultar" value="Consultar">
+                <input class="butIni" type ="button" onclick="ingresarDatos()" title="Registrar Salon" value="Registrar Salon">
+                <input class="butIni" type ="button" id="pruebaba" onclick="actualizar()" title="actualizar" value="actualizar">
+                <input class="butIni" type ="button" onclick="limpiarCampos(),habilitar()" title="Limpiar" value="Limpiar">
+            </div>
         </div>
     </div>
-        <div class="posicion2" id="TablaP"></div>  
-    </div>
-    <div class="menu">
-        <h1 class="header2">Menu</h1>
-        <a href="clientes.html"> <h2 class="color">Clientes</h2></a>
-        <a href="message.html">  <h2 class="color">Mensajes</h2></a>
-        <a href="Reservation.html"><h2 class="header2">Reservas</h2></a>
-        <a href="Admin.html">  <h2 class="color">Administradores</h2></a>
-        <a href="Category.html">  <h2 class="color">Categorias</h2></a>
-        <a href="Score.html">  <h2 class="color">Puntajes</h2></a>
-        <a href="inicio.html">   <h2 class="color">Inicio</h2></a>
-    </div>   
-</div>
 </body>
 </html>

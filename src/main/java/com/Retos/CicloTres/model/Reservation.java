@@ -54,9 +54,7 @@ public class Reservation implements Serializable{
     public void setScore(Score score) {
         this.score = score;
     }
-    
-    
-    
+
     public Partyroom getPartyroom() {
         return partyroom;
     }
@@ -80,8 +78,6 @@ public class Reservation implements Serializable{
     public void setStatus(String status) {
         this.status = status;
     }
-    
-
 
     public Integer getIdReservation() {
         return idReservation;

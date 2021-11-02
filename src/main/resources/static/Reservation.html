@@ -3,39 +3,49 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PARTY COLOMBIA RESERVAS</title>
+    <title>Reto 5: Reservas</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<div class="margen">
 <body>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/misFunciones.js"></script>
-    <link rel="stylesheet" href="css/estilos.css">
-	<h1 class="header">Reservas</h1>
-    <p></p>
-    <div class="posicion">
-    <div class="posicion">
-        <div class="encoger">
-            <input class= "tamañoceldas" type="hidden" id="idReservation" placeholder="idReservation">   
-            <input class= "tamañoceldas" type="Date" id="startDate" placeholder="startDate">    
-            <input class= "tamañoceldas" type="Date" id="devolutionDate" placeholder="description">
-            
-            <input class="field button" type ="button" onclick="CargarRes()" title="Consultar" value="Consultar">
-            <input class="field button" type ="button" onclick="ingresarDatosRes()" title="Registrar Reserva" value="Registrar Reserva">
-            <input class="field button" type ="button" onclick="limpiarCamposRes(),habilitarRes()" title="Limpiar" value="Limpiar">       
+	<div class="header">
+        <h1>RESERVAS</h1>
+    </div>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <h1 class="centrarObj">Menu</h1>
+                <li><a href="Score.html"><button class="butMenu">Puntajes</button></a></li>
+                <li><a href="message.html"><button class="butMenu">Mensajes</button></a></li>
+                <li><a href="Category.html"><button class="butMenu">Categorias</button></a></li>
+                <li><a href="Pruebaindex.html"><button class="butMenu">Salones</button></a></li>
+                <li><a href="clientes.html"><button class="butMenu">Clientees</button></a></li>
+                <li><a href="Admin.html"><button class="butMenu">Administradores</button></a></li>
+                <li><a href="inicio.html"><button class="butMenu">Inicio</button></a></li>
+            </ul>
+        </div>
+        <div class="col-9 col-s-9">
+            <div class="fondReg">
+                <p class="centrarObj tituloCelda"> DATOS DE REGISTRO DE RESERVACION</p>
+                <div class="hijo_reg">
+                    <p id="TablaP"></p>
+                </div>
+            </div>
+            <div class="centrarObj fondInp">
+                <input class= "textoHolder" type="hidden" id="idReservation" placeholder="idReservation">
+                <input class= "textoHolder" type="Date" id="startDate" placeholder="startDate">
+                <input class= "textoHolder" type="Date" id="devolutionDate" placeholder="description">
+            </div>
+            <div class="fondBut">
+                <input class="butIni" type ="button" onclick="CargarRes()" title="Consultar" value="Consultar">
+                <input class="butIni" type ="button" onclick="ingresarDatosRes()" title="Registrar Reserva" value="Registrar Reserva">
+                <input class="butIni" type ="button" onclick="limpiarCamposRes(),habilitarRes()" title="Limpiar" value="Limpiar">
+                <input class="butIni" type ="button" onclick="ReporteCD()" title="Reporte Completos vs Cancelados" value="Reporte Completos vs Cancelados">
+                <input class="butIni" type ="button" onclick="CargarRes2020()" title="Reporte reservas 2020" value="Reporte reservas 2020">
+                <input class="butIni" type ="button" onclick="CargarTOP()" title="TOP clientes" value="TOP clientes">
+            </div>
         </div>
     </div>
-        <div class="posicion2" id="TablaP"></div>  
-    </div>
-    <div class="menu">
-        <h1 class="header2">Menu</h1>
-        <a href="clientes.html"> <h2 class="color">Clientes</h2></a>
-        <a href="message.html">  <h2 class="color">Mensajes</h2></a>
-        <a href="Pruebaindex.html">  <h2 class="color">Salones</h2></a>
-        <a href="Category.html">  <h2 class="color">Categorias</h2></a>
-        <a href="Admin.html">  <h2 class="color">Administradores</h2></a>
-        <a href="Score.html">  <h2 class="color">Puntajes</h2></a>
-        <a href="inicio.html">   <h2 class="color">Inicio</h2></a>
-    </div>   
-</div>
 </body>
 </html>

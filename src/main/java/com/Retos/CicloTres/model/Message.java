@@ -47,10 +47,7 @@ public class Message implements Serializable{
     public void setClient(Client client) {
         this.client = client;
     }
-    
-    
-    
-    
+
     public Partyroom getPartyroom() {
         return partyroom;
     }
